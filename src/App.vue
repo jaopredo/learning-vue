@@ -8,6 +8,8 @@
     import Picture from './components/Picture.vue'
     import ScopedStyle from './components/ScopedStyle.vue'
     import Cards from './components/Cards.vue'
+    import MultipleEvents from "./components/MultipleEvents.vue"
+    import Imagem from "./components/Imagem.vue"
 
     export default {
         name: 'App',
@@ -20,7 +22,9 @@
             Diretivas,
             Picture,
             ScopedStyle,
-            Cards
+            Cards,
+            MultipleEvents,
+            Imagem
         }
     }
 </script>
@@ -64,6 +68,14 @@
     <h2>Renderização de Listas</h2>
     <p>Eu consigo através da diretiva <strong>v-for</strong> fazer um laço que renderiza vários componentes a partir de uma lista que eu tenha definido ou passao para meu componente</p>
     <Cards/>
+
+    <h2>Múltiplos Eventos</h2>
+    <p>É possível ativar mais de um evento ao mesmo tempo no Vue, utilizando da síntaxe normal, porém adicionando os outros eventos através de virgulas</p>
+    <MultipleEvents/>
+
+    <h2>Emits</h2>
+    <p>É um evento que permite que eu execute eventos no componente filho de modo que o componente pai saiba que isso aconteceu</p>
+    <Imagem/>
 </template>
 
 <style>
