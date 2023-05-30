@@ -6,6 +6,9 @@
     import Children from './components/Children.vue'
     import Diretivas from './components/Diretivas.vue'
     import Picture from './components/Picture.vue'
+    import ScopedStyle from './components/ScopedStyle.vue'
+    import Cards from './components/Cards.vue'
+
     export default {
         name: 'App',
         components: {
@@ -15,7 +18,9 @@
             Props,
             Children,
             Diretivas,
-            Picture
+            Picture,
+            ScopedStyle,
+            Cards
         }
     }
 </script>
@@ -52,6 +57,13 @@
     <h1>Atributos Dinâmicos</h1>
     <p>Alguns atributos de tags específicas que permitem uma melhor dinamização da aplicação, como a tag <strong>src</strong> de uma <strong>img</strong></p>
     <Picture/>
+
+    <h1>Estilização Local e Global</h1>
+    <ScopedStyle/>
+
+    <h2>Renderização de Listas</h2>
+    <p>Eu consigo através da diretiva <strong>v-for</strong> fazer um laço que renderiza vários componentes a partir de uma lista que eu tenha definido ou passao para meu componente</p>
+    <Cards/>
 </template>
 
 <style>
